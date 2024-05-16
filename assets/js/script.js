@@ -44,7 +44,7 @@ function checkAnswer() {
     alert (" Hey! you got it right! :D");
   } else {
     alert (`Awwww.......You shared ${userAnswer}. The correct answer is ${calculatedAnswer[0]}!`);
-  }
+      }
   runGame(calculatedAnswer[1]);
 }
 
@@ -57,7 +57,7 @@ function calculateCorrectAnswer() {
     let operand2 = parseInt(document.getElementById('operand2').innerText);
     let operator = document.getElementById('operator').innerText;
     if(operator === '+') {
-        return [operand1 + operand2, addition];
+        return [operand1 + operand2, "addition"];
 
     } else {
         alert(`unimplemented operator ${operator}`);
